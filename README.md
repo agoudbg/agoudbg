@@ -1,6 +1,8 @@
 ### Hi there 👋
-It's agou, a pure noob 👎  
-However I have contributed to the development of Windows and iOS ~~by joining the Insider Preview Programs~~ 👊  
+This is **agou**!
+
+I'm running **[nmTeam](https://github.com/nm-Team)** and **[nmBot Telegram](https://t.me/nmnmfunbot)**. I'm proud of nmBot, hope you like it too.
+
 ![GitHub Stats](https://raw.githubusercontent.com/agoudbg/github-stats/master/generated/overview.svg)![GitHub Stats](https://raw.githubusercontent.com/agoudbg/github-stats/master/generated/languages.svg)  
   
 🔗 Website: <a href="//agou.im?from=github">agou.im</a>  

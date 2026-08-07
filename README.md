@@ -56,7 +56,7 @@ I'm familiar with the following technologies and tools:
 
 - I'm a Chinese editor/translator at <img src="./assets/logos/avatars-githubusercontent-com-56800993-round-8521da066a.png" width="20" height="20" alt="tginfo Logo" /> **[Telegram Info](https://tginfo.me/?ref=github)**, providing the latest news and information about Telegram and its ecosystem.
 - I'm translating documentation for <img src="./assets/logos/avatars-githubusercontent-com-81446018-soft-aab114cbb2.png" width="20" height="20" alt="grammY Logo" /> **[grammY](https://grammy.dev/?ref=github)**, the best Telegram bot framework for Node.js and Deno.
-I'm contributing to open-source projects and sharing my knowledge with the community through blog posts and tutorials.
+- I'm contributing to open-source projects and sharing my knowledge with the community through blog posts and tutorials.
 
 ![GitHub Stats](https://raw.githubusercontent.com/agoudbg/github-stats/master/generated/overview.svg) ![GitHub Stats](https://raw.githubusercontent.com/agoudbg/github-stats/master/generated/languages.svg)
 

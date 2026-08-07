@@ -4,7 +4,11 @@ This is <Logo src="https://avatars.githubusercontent.com/u/55237525?v=4" alt="ag
 
 I'm a **full-stack developer** and **open-source contributor**. I love to create useful tools and share them with the world.
 
+<sup>
+
 **English** | [中文](README.zh-CN.md)
+
+</sup>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700)<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
      unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
@@ -21,7 +25,7 @@ I'm a **full-stack developer** and **open-source contributor**. I love to create
 ## My Products
 
 - Built <Logo src="https://nmbot.nmnm.fun/favicon.ico" alt="nmBot Logo"> **[nmBot](https://nmteam.xyz/products/overview/nmBot-Telegram)**, nmTeam's Telegram bot that helps you manage your groups and channels with ease, serving **over 700k monthly active users**.
-- :electron: **[Cosmosh](https://github.com/agoudbg/Cosmosh)**, a cross-platform desktop SSH client with a beautiful UI and powerful features, which is still under development.
+- Building <Logo src="https://github.githubassets.com/images/icons/emoji/electron.png" alt="Cosmosh Logo" rounded> **[Cosmosh](https://github.com/agoudbg/Cosmosh)**, a cross-platform desktop SSH client with a beautiful UI and powerful features, which is still under development.
 - You can find more of my projects and tools on my <Logo src="https://github.com/favicon.ico" alt="GitHub Logo" rounded> **[GitHub profile](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=)**, including some open-source projects and personal experiments.
 
 I'm proud of my products, and I hope you like them too.
@@ -67,4 +71,8 @@ I'm contributing to open-source projects and sharing my knowledge with the commu
 
 ---
 
-<sub>Special thanks to [skillicons.dev](https://skillicons.dev) for providing the icons used in this README.</sub>
+<sub>
+
+Special thanks to [skillicons.dev](https://skillicons.dev) for providing the icons used in this README.
+
+</sub>

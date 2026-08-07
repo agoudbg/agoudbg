@@ -6,7 +6,11 @@
 
 我是一名**全栈开发者**，乐于参与**开源贡献**，希望我的工作能为你带来价值。
 
+<sup>
+
 [English](README.md) | **中文**
+
+</sup>
 
 ![账号浏览量](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700&label=浏览量​​​​​​)<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
      unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
@@ -23,7 +27,7 @@
 ## 我的产品
 
 - 为 nmTeam 打造了 <img src="./assets/logos/nmbot-nmnm-fun-favicon-soft-9e3a36ced5.png" width="20" height="20" alt="nmBot 图标" /> **[nmBot](https://nmteam.xyz/products/overview/nmBot-Telegram?ref=github)**，这款每月 **70 多万人**都在用的 Telegram 机器人可以帮你轻松管理群组和频道。
-- :electron: **[Cosmosh](https://github.com/agoudbg/Cosmosh?ref=github)**，正在开发的跨平台桌面 SSH 客户端，兼顾超绝颜值和超强体验。
+- 正在开发跨平台桌面 SSH 客户端 <img src="./assets/logos/github-githubassets-com-electron-round-c0f8e1a05b.png" width="20" height="20" alt="Cosmosh Logo" /> **[Cosmosh](https://github.com/agoudbg/Cosmosh?ref=github)**，兼顾超绝颜值和超强体验。
 - 在我的 <img src="./assets/logos/github-com-favicon-round-6c98f48d3c.png" width="20" height="20" alt="GitHub 图标" /> **[GitHub 账号](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=&ref=github)**，你还可以找到我的更多开源项目、工具和探索。
 
 我以我的项目为荣，希望你也觉得好用。
@@ -69,4 +73,8 @@
 
 ---
 
-<sub>鸣谢 [skillicons.dev](https://skillicons.dev/?ref=github) 为本自述文件提供图标。</sub>
+<sub>
+
+鸣谢 [skillicons.dev](https://skillicons.dev/?ref=github) 为本自述文件提供图标。
+
+</sub>

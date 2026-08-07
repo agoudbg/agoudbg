@@ -6,7 +6,11 @@ This is <img src="./assets/logos/avatars-githubusercontent-com-55237525-round-e6
 
 I'm a **full-stack developer** and **open-source contributor**. I love to create useful tools and share them with the world.
 
+<sup>
+
 **English** | [中文](README.zh-CN.md)
+
+</sup>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700)<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
      unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
@@ -23,7 +27,7 @@ I'm a **full-stack developer** and **open-source contributor**. I love to create
 ## My Products
 
 - Built <img src="./assets/logos/nmbot-nmnm-fun-favicon-soft-9e3a36ced5.png" width="20" height="20" alt="nmBot Logo" /> **[nmBot](https://nmteam.xyz/products/overview/nmBot-Telegram?ref=github)**, nmTeam's Telegram bot that helps you manage your groups and channels with ease, serving **over 700k monthly active users**.
-- :electron: **[Cosmosh](https://github.com/agoudbg/Cosmosh?ref=github)**, a cross-platform desktop SSH client with a beautiful UI and powerful features, which is still under development.
+- Building <img src="./assets/logos/github-githubassets-com-electron-round-c0f8e1a05b.png" width="20" height="20" alt="Cosmosh Logo" /> **[Cosmosh](https://github.com/agoudbg/Cosmosh?ref=github)**, a cross-platform desktop SSH client with a beautiful UI and powerful features, which is still under development.
 - You can find more of my projects and tools on my <img src="./assets/logos/github-com-favicon-round-6c98f48d3c.png" width="20" height="20" alt="GitHub Logo" /> **[GitHub profile](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=&ref=github)**, including some open-source projects and personal experiments.
 
 I'm proud of my products, and I hope you like them too.
@@ -69,4 +73,8 @@ I'm contributing to open-source projects and sharing my knowledge with the commu
 
 ---
 
-<sub>Special thanks to [skillicons.dev](https://skillicons.dev/?ref=github) for providing the icons used in this README.</sub>
+<sub>
+
+Special thanks to [skillicons.dev](https://skillicons.dev/?ref=github) for providing the icons used in this README.
+
+</sub>

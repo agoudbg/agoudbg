@@ -6,8 +6,7 @@ I'm a **full-stack developer** and **open-source contributor**. I love to create
 
 **English** | [中文](README.zh-CN.md)
 
-![Profile Views](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700)
-<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
+![Profile Views](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700)<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
      unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
      ~1870 days since this profile README went live on 2021-06-24); the counter keeps tracking
      real views on top of it. -->

@@ -6,8 +6,9 @@
 
 我是一名**全栈开发者**，乐于参与**开源贡献**，希望我的工作能为你带来价值。
 
-![账号浏览量](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700&label=浏览量​​​​​​)
-<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
+[English](README.md) | **中文**
+
+![账号浏览量](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700&label=浏览量​​​​​​)<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
      unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
      ~1870 days since this profile README went live on 2021-06-24); the counter keeps tracking
      real views on top of it. Added zero width spaces to fix CJK width in badge. -->

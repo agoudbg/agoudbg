@@ -2,10 +2,15 @@
 
 This is <Logo src="https://avatars.githubusercontent.com/u/55237525?v=4" alt="agou's avatar" rounded> **[agou](https://github.com/agoudbg)**!
 
-I'm a **full-stack developer** and **open-source contributor**.
-I love to create useful tools and share them with the world.
+I'm a **full-stack developer** and **open-source contributor**. I love to create useful tools and share them with the world.
 
-![Profile Views](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square)
+**English** | [中文](README.zh-CN.md)
+
+![Profile Views](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700)
+<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
+     unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
+     ~1870 days since this profile README went live on 2021-06-24); the counter keeps tracking
+     real views on top of it. -->
 ![Languages: 中文 / English](https://img.shields.io/badge/languages-%E4%B8%AD%E6%96%87_%2F_English-blue?style=flat-square)
 [![Telegram Channel: @bakadog](https://img.shields.io/badge/Telegram-%40bakadog-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/bakadog)
 
@@ -16,9 +21,9 @@ I love to create useful tools and share them with the world.
 
 ## My Products
 
-- nmTeam built <Logo src="https://nmbot.nmnm.fun/favicon.ico" alt="nmBot Logo"> **[nmBot](https://nmteam.xyz/products/overview/nmBot-Telegram)**, a Telegram bot that helps you manage your groups and channels with ease, serving **over 700k monthly active users**.
+- Built <Logo src="https://nmbot.nmnm.fun/favicon.ico" alt="nmBot Logo"> **[nmBot](https://nmteam.xyz/products/overview/nmBot-Telegram)**, nmTeam's Telegram bot that helps you manage your groups and channels with ease, serving **over 700k monthly active users**.
 - :electron: **[Cosmosh](https://github.com/agoudbg/Cosmosh)**, a cross-platform desktop SSH client with a beautiful UI and powerful features, which is still under development.
-- You can find more of my projects and tools on my :github: **[GitHub profile](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=)**, including some open-source projects and personal experiments.
+- You can find more of my projects and tools on my <Logo src="https://github.com/favicon.ico" alt="GitHub Logo" rounded> **[GitHub profile](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=)**, including some open-source projects and personal experiments.
 
 I'm proud of my products, and I hope you like them too.
 
@@ -46,18 +51,20 @@ I'm familiar with the following technologies and tools:
 
 - I'm a Chinese editor/translator at <Logo src="https://avatars.githubusercontent.com/u/56800993?s=200&v=4" alt="tginfo Logo" rounded> **[Telegram Info](https://tginfo.me)**, providing the latest news and information about Telegram and its ecosystem.
 - I'm translating documentation for <Logo src="https://avatars.githubusercontent.com/u/81446018?s=200&v=4" alt="grammY Logo"> **[grammY](https://grammy.dev)**, the best Telegram bot framework for Node.js and Deno.
+I'm contributing to open-source projects and sharing my knowledge with the community through blog posts and tutorials.
 
 ![GitHub Stats](https://raw.githubusercontent.com/agoudbg/github-stats/master/generated/overview.svg) ![GitHub Stats](https://raw.githubusercontent.com/agoudbg/github-stats/master/generated/languages.svg)
 
 ## More About Me
 
 - View my personal website: **[agou.im](https://agou.im)**
-- And my blog: **[blog.agou.im](https://blog.agou.im)**
+- Read my blog: **[blog.agou.im](https://blog.agou.im)**
 - Subscribe to my Telegram channel: **[@bakadog](https://t.me/bakadog)**
 
 ## Contact Me
 
 - Email: **[agoudbg@gmail.com](mailto:agoudbg@gmail.com)**
+- X (Twitter): **[@agoudbg](https://x.com/agoudbg)**
 
 ---
 

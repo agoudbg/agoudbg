@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { Buffer } from "node:buffer";
-import { dirname, join, relative } from "node:path";
+import { basename, dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { decodeIco, isIco } from "icojs";
 import sharp from "sharp";
@@ -12,8 +12,19 @@ const DEFAULT_ASSET_DIRECTORY = join(ROOT_DIRECTORY, "assets", "logos");
 const DEFAULT_REF = "github";
 const MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024;
 const MAX_IMAGE_DIMENSION = 64;
-const GENERATED_NOTICE =
-  "<!-- Generated from README.template.md. Do not edit README.md directly; run `deno task build`. -->";
+const BUILD_TARGETS = [
+  { templatePath: DEFAULT_TEMPLATE_PATH, outputPath: DEFAULT_OUTPUT_PATH },
+  {
+    templatePath: join(ROOT_DIRECTORY, "README.zh-CN.template.md"),
+    outputPath: join(ROOT_DIRECTORY, "README.zh-CN.md"),
+  },
+];
+
+function generatedNotice(templatePath: string, outputPath: string): string {
+  return `<!-- Generated from ${basename(templatePath)}. Do not edit ${
+    basename(outputPath)
+  } directly; run \`deno task build\`. -->`;
+}
 
 interface CompilerOptions {
   templatePath?: string;
@@ -404,16 +415,27 @@ export async function compileReadme(options: CompilerOptions = {}): Promise<Comp
     options.refresh ?? false,
   );
   const linked = addRefParameters(logos.markdown, options.ref ?? DEFAULT_REF);
-  const generated = `${GENERATED_NOTICE}\n\n${linked.trimEnd()}\n`;
+  const generated = `${generatedNotice(templatePath, outputPath)}\n\n${linked.trimEnd()}\n`;
 
   await removeStaleAssets(assetDirectory, logos.filenames);
   const changed = await writeIfChanged(outputPath, generated);
   return { assetCount: logos.filenames.size, changed, outputPath };
 }
 
-async function watchReadme(options: CompilerOptions): Promise<void> {
-  const templatePath = options.templatePath ?? DEFAULT_TEMPLATE_PATH;
-  const watcher = Deno.watchFs(templatePath);
+async function compileAll(refresh: boolean): Promise<void> {
+  for (const target of BUILD_TARGETS) {
+    const result = await compileReadme({ ...target, refresh });
+    console.log(
+      `${
+        result.changed ? "Generated" : "Checked"
+      } ${result.outputPath} with ${result.assetCount} logo assets.`,
+    );
+  }
+}
+
+async function watchReadme(refresh: boolean): Promise<void> {
+  const templatePaths = BUILD_TARGETS.map((target) => target.templatePath);
+  const watcher = Deno.watchFs(templatePaths);
   let timer: number | undefined;
   let building = false;
   let pending = false;
@@ -425,8 +447,7 @@ async function watchReadme(options: CompilerOptions): Promise<void> {
     }
     building = true;
     try {
-      const result = await compileReadme(options);
-      console.log(`${result.changed ? "Generated" : "Checked"} ${result.outputPath}`);
+      await compileAll(refresh);
     } catch (error) {
       console.error(`README build failed: ${errorMessage(error)}`);
     } finally {
@@ -439,7 +460,7 @@ async function watchReadme(options: CompilerOptions): Promise<void> {
   };
 
   await build();
-  console.log(`Watching ${templatePath}`);
+  console.log(`Watching ${templatePaths.join(", ")}`);
 
   for await (const event of watcher) {
     if (event.kind !== "modify" && event.kind !== "create") {
@@ -461,16 +482,11 @@ function parseArguments(args: string[]): { refresh: boolean; watch: boolean } {
 async function main(): Promise<void> {
   const arguments_ = parseArguments(Deno.args);
   if (arguments_.watch) {
-    await watchReadme({ refresh: arguments_.refresh });
+    await watchReadme(arguments_.refresh);
     return;
   }
 
-  const result = await compileReadme({ refresh: arguments_.refresh });
-  console.log(
-    `${
-      result.changed ? "Generated" : "Checked"
-    } ${result.outputPath} with ${result.assetCount} logo assets.`,
-  );
+  await compileAll(arguments_.refresh);
 }
 
 if (import.meta.main) {

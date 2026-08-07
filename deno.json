@@ -1,0 +1,34 @@
+{
+  "imports": {
+    "icojs": "npm:icojs@1.0.0",
+    "sharp": "npm:sharp@0.35.3"
+  },
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "build": "deno run --allow-read --allow-write=README.md,assets/logos --allow-net --allow-env --allow-ffi scripts/build_readme.ts",
+    "build:refresh": "deno task build --refresh",
+    "watch": "deno task build --watch",
+    "check": "deno fmt --check && deno lint && deno check scripts/build_readme.ts tests/build_readme_test.ts && deno test --allow-read --allow-write --allow-net=127.0.0.1 --allow-env --allow-ffi"
+  },
+  "fmt": {
+    "include": [
+      "scripts/",
+      "tests/",
+      "deno.json"
+    ],
+    "lineWidth": 100,
+    "semiColons": true,
+    "singleQuote": false
+  },
+  "lint": {
+    "include": [
+      "scripts/",
+      "tests/"
+    ]
+  },
+  "test": {
+    "include": [
+      "tests/"
+    ]
+  }
+}

@@ -12,6 +12,7 @@ const DEFAULT_ASSET_DIRECTORY = join(ROOT_DIRECTORY, "assets", "logos");
 const DEFAULT_REF = "github";
 const MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024;
 const MAX_IMAGE_DIMENSION = 64;
+const HEX_BACKGROUND_PATTERN = /^#[\da-f]{6}(?:[\da-f]{2})?$/i;
 const BUILD_TARGETS = [
   { templatePath: DEFAULT_TEMPLATE_PATH, outputPath: DEFAULT_OUTPUT_PATH },
   {
@@ -37,6 +38,7 @@ interface CompilerOptions {
 interface ParsedLogo {
   src: string;
   alt: string;
+  background?: string;
   rounded: boolean;
 }
 
@@ -85,7 +87,7 @@ function parseLogoAttributes(rawAttributes: string): ParsedLogo {
     }
 
     const name = match[1].toLowerCase();
-    if (!new Set(["src", "alt", "rounded"]).has(name)) {
+    if (!new Set(["src", "alt", "background", "rounded"]).has(name)) {
       throw new Error(`Unsupported <Logo> attribute: ${name}`);
     }
     if (attributes.has(name)) {
@@ -111,9 +113,20 @@ function parseLogoAttributes(rawAttributes: string): ParsedLogo {
     throw new Error("<Logo> alt must have a value");
   }
 
+  const backgroundAttribute = attributes.get("background");
+  if (backgroundAttribute === true) {
+    throw new Error("<Logo> background must have a value");
+  }
+  if (typeof backgroundAttribute === "string" && !HEX_BACKGROUND_PATTERN.test(backgroundAttribute)) {
+    throw new Error(
+      `<Logo> background must be a 6- or 8-digit hex color: ${backgroundAttribute}`,
+    );
+  }
+
   return {
     src: url.href,
     alt: altAttribute ?? `${url.hostname} logo`,
+    background: typeof backgroundAttribute === "string" ? backgroundAttribute : undefined,
     rounded: attributes.has("rounded"),
   };
 }
@@ -194,7 +207,10 @@ function assetFilename(logo: ParsedLogo): string {
     .replace(/^-|-$/g, "")
     .slice(0, 56) || "logo";
   const mode = logo.rounded ? "round" : "soft";
-  const hash = createHash("sha256").update(`${logo.src}\0${mode}`).digest("hex").slice(0, 10);
+  const hashInput = logo.background
+    ? `${logo.src}\0${mode}\0background=${logo.background}`
+    : `${logo.src}\0${mode}`;
+  const hash = createHash("sha256").update(hashInput).digest("hex").slice(0, 10);
   return `${slug}-${mode}-${hash}.png`;
 }
 
@@ -284,7 +300,11 @@ async function decodeImage(bytes: Uint8Array): Promise<Buffer> {
   return Buffer.from(largest.buffer);
 }
 
-async function renderLogo(bytes: Uint8Array, rounded: boolean): Promise<Uint8Array> {
+async function renderLogo(
+  bytes: Uint8Array,
+  rounded: boolean,
+  background?: string,
+): Promise<Uint8Array> {
   const input = await decodeImage(bytes);
   const normalized = await sharp(input, { animated: false })
     .rotate()
@@ -304,7 +324,12 @@ async function renderLogo(bytes: Uint8Array, rounded: boolean): Promise<Uint8Arr
     `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg"><rect width="${width}" height="${height}" rx="${radius}" ry="${radius}" fill="white"/></svg>`,
   );
 
-  return await sharp(normalized.data)
+  const image = sharp(normalized.data);
+  if (background) {
+    image.flatten({ background });
+  }
+
+  return await image
     .composite([{ input: mask, blend: "dest-in" }])
     .png({ compressionLevel: 9 })
     .toBuffer();
@@ -332,7 +357,7 @@ async function ensureLogoAsset(
   }
 
   const source = await download(logo.src);
-  const rendered = await renderLogo(source, logo.rounded);
+  const rendered = await renderLogo(source, logo.rounded, logo.background);
   await Deno.writeFile(outputPath, rendered);
   return filename;
 }

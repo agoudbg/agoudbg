@@ -28,7 +28,7 @@ I'm a **full-stack developer** and **open-source contributor**. I love to create
 
 - Built <Logo src="https://nmbot.nmnm.fun/favicon.ico" alt="nmBot Logo"> **[nmBot](https://nmteam.xyz/products/overview/nmBot-Telegram)**, nmTeam's Telegram bot that helps you manage your groups and channels with ease, serving **over 700k monthly active users**.
 - Building <Logo src="https://github.githubassets.com/images/icons/emoji/electron.png" alt="Cosmosh Logo" rounded> **[Cosmosh](https://github.com/agoudbg/Cosmosh)**, a cross-platform desktop SSH client with a beautiful UI and powerful features, which is still under development.
-- You can find more of my projects and tools on my <Logo src="https://github.com/favicon.ico" alt="GitHub Logo" rounded> **[GitHub profile](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=)**, including some open-source projects and personal experiments.
+- You can find more of my projects and tools on my <Logo src="https://github.com/favicon.ico" alt="GitHub Logo" rounded background="#ffffff"> **[GitHub profile](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=)**, including some open-source projects and personal experiments.
 
 I'm proud of my products, and I hope you like them too.
 

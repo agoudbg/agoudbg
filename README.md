@@ -30,7 +30,7 @@ I'm a **full-stack developer** and **open-source contributor**. I love to create
 
 - Built <img src="./assets/logos/nmbot-nmnm-fun-favicon-soft-9e3a36ced5.png" width="20" height="20" alt="nmBot Logo" /> **[nmBot](https://nmteam.xyz/products/overview/nmBot-Telegram?ref=github)**, nmTeam's Telegram bot that helps you manage your groups and channels with ease, serving **over 700k monthly active users**.
 - Building <img src="./assets/logos/github-githubassets-com-electron-round-c0f8e1a05b.png" width="20" height="20" alt="Cosmosh Logo" /> **[Cosmosh](https://github.com/agoudbg/Cosmosh?ref=github)**, a cross-platform desktop SSH client with a beautiful UI and powerful features, which is still under development.
-- You can find more of my projects and tools on my <img src="./assets/logos/github-com-favicon-round-6c98f48d3c.png" width="20" height="20" alt="GitHub Logo" /> **[GitHub profile](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=&ref=github)**, including some open-source projects and personal experiments.
+- You can find more of my projects and tools on my <img src="./assets/logos/github-com-favicon-round-c6cd8927a9.png" width="20" height="20" alt="GitHub Logo" /> **[GitHub profile](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=&ref=github)**, including some open-source projects and personal experiments.
 
 I'm proud of my products, and I hope you like them too.
 

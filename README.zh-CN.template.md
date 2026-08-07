@@ -28,7 +28,7 @@
 
 - 为 nmTeam 打造了 <Logo src="https://nmbot.nmnm.fun/favicon.ico" alt="nmBot 图标"> **[nmBot](https://nmteam.xyz/products/overview/nmBot-Telegram)**，这款每月 **70 多万人**都在用的 Telegram 机器人可以帮你轻松管理群组和频道。
 - 正在开发跨平台桌面 SSH 客户端 <Logo src="https://github.githubassets.com/images/icons/emoji/electron.png" alt="Cosmosh Logo" rounded> **[Cosmosh](https://github.com/agoudbg/Cosmosh)**，兼顾超绝颜值和超强体验。
-- 在我的 <Logo src="https://github.com/favicon.ico" alt="GitHub 图标" rounded> **[GitHub 账号](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=)**，你还可以找到我的更多开源项目、工具和探索。
+- 在我的 <Logo src="https://github.com/favicon.ico" alt="GitHub 图标" rounded background="#ffffff"> **[GitHub 账号](https://github.com/agoudbg?tab=repositories&q=&type=source&language=&sort=)**，你还可以找到我的更多开源项目、工具和探索。
 
 我以我的项目为荣，希望你也觉得好用。
 

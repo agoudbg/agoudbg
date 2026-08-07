@@ -34,7 +34,7 @@ Deno.test("addRefParameters updates navigational links without touching images o
   assert.match(output, /\[code\]\(https:\/\/example\.com\/fenced\)/);
 });
 
-Deno.test("compileReadme downloads logos, bakes both radii, and emits a warning", async () => {
+Deno.test("compileReadme downloads logos, bakes radii, and supports contrast backgrounds", async () => {
   const temporaryDirectory = await Deno.makeTempDir({ prefix: "readme-compiler-test-" });
   const templatePath = join(temporaryDirectory, "README.template.md");
   const outputPath = join(temporaryDirectory, "README.md");
@@ -42,13 +42,18 @@ Deno.test("compileReadme downloads logos, bakes both radii, and emits a warning"
   const png = await sharp({
     create: { width: 80, height: 80, channels: 4, background: "#ff0000ff" },
   }).png().toBuffer();
+  const transparentPng = await sharp({
+    create: { width: 80, height: 80, channels: 4, background: "#00000000" },
+  }).png().toBuffer();
   const ico = Buffer.from(await encodeIco([{ buffer: png }]));
   const controller = new AbortController();
   const server = Deno.serve(
     { hostname: "127.0.0.1", port: 0, signal: controller.signal, onListen: () => {} },
     (request) => {
-      const isIcon = new URL(request.url).pathname.endsWith(".ico");
-      return new Response(isIcon ? ico : png, {
+      const pathname = new URL(request.url).pathname;
+      const isIcon = pathname.endsWith(".ico");
+      const body = pathname.endsWith("transparent.png") ? transparentPng : isIcon ? ico : png;
+      return new Response(body, {
         headers: { "content-type": isIcon ? "image/x-icon" : "image/png" },
       });
     },
@@ -63,6 +68,7 @@ Deno.test("compileReadme downloads logos, bakes both radii, and emits a warning"
         "",
         `<Logo src="${baseUrl}/soft.png" alt="Soft">`,
         `<Logo src="${baseUrl}/round.png" alt="Round" rounded>`,
+        `<Logo src="${baseUrl}/transparent.png" alt="Contrast" rounded background="#ffffff">`,
         `<Logo src="${baseUrl}/favicon.ico" alt="ICO">`,
         "[Site](https://example.com/path)",
         "[Email](mailto:test@example.com)",
@@ -81,7 +87,7 @@ Deno.test("compileReadme downloads logos, bakes both radii, and emits a warning"
     }
 
     assert.equal(first.changed, true);
-    assert.equal(first.assetCount, 3);
+    assert.equal(first.assetCount, 4);
     assert.match(
       generated,
       /^<!-- Generated from README\.template\.md\. Do not edit README\.md directly;/,
@@ -93,12 +99,14 @@ Deno.test("compileReadme downloads logos, bakes both radii, and emits a warning"
     assert.match(generated, /https:\/\/example\.com\/path\?ref=github/);
     assert.match(generated, /mailto:test@example\.com/);
     assert.equal(assetNames.includes("stale.png"), false);
-    assert.equal(assetNames.length, 3);
+    assert.equal(assetNames.length, 4);
 
     const softName = assetNames.find((name) => name.includes("-soft-soft-"));
     const roundName = assetNames.find((name) => name.includes("-round-round-"));
+    const contrastName = assetNames.find((name) => name.includes("transparent-round-"));
     assert.ok(softName);
     assert.ok(roundName);
+    assert.ok(contrastName);
 
     const soft = await sharp(join(assetDirectory, softName)).raw().toBuffer({
       resolveWithObject: true,
@@ -106,10 +114,20 @@ Deno.test("compileReadme downloads logos, bakes both radii, and emits a warning"
     const round = await sharp(join(assetDirectory, roundName)).raw().toBuffer({
       resolveWithObject: true,
     });
+    const contrast = await sharp(join(assetDirectory, contrastName)).raw().toBuffer({
+      resolveWithObject: true,
+    });
     assert.equal(soft.info.width, 64);
     assert.equal(soft.info.height, 64);
     assert.equal(round.info.width, 64);
     assert.equal(round.info.height, 64);
+    const centerCoordinate = Math.floor(contrast.info.width / 2);
+    const centerOffset = (centerCoordinate * contrast.info.width + centerCoordinate) *
+      contrast.info.channels;
+    assert.deepEqual(
+      Array.from(contrast.data.subarray(centerOffset, centerOffset + contrast.info.channels)),
+      [255, 255, 255, 255],
+    );
 
     const sampleCoordinate = Math.floor(soft.info.width / 8);
     const pixelOffset = (sampleCoordinate * soft.info.width + sampleCoordinate) *

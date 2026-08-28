@@ -38,19 +38,19 @@ I'm familiar with the following technologies and tools:
 
 - Frontend:
 
-  ![HTML, JavaScript, TypeScript, Vue.js, React, Nuxt.js, Next.js, Vite, Astro, jQuery, Tailwind CSS, CSS, Sass](https://skillicons.dev/icons?i=html,js,ts,vue,react,nuxtjs,nextjs,vite,astro,jquery,tailwind,css,sass&theme=light#gh-light-mode-only)![HTML, JavaScript, TypeScript, Vue.js, React, Nuxt.js, Next.js, Vite, Astro, jQuery, Tailwind CSS, CSS, Sass](https://skillicons.dev/icons?i=html,js,ts,vue,react,nuxtjs,nextjs,vite,astro,jquery,tailwind,css,sass&theme=dark#gh-dark-mode-only)
+  <a href="https://skillicons.dev/icons?i=html,js,ts,vue,react,nuxtjs,nextjs,vite,astro,jquery,tailwind,css,sass&theme=light#gh-light-mode-only"><img src="https://skillicons.dev/icons?i=html,js,ts,vue,react,nuxtjs,nextjs,vite,astro,jquery,tailwind,css,sass&amp;theme=light" alt="HTML, JavaScript, TypeScript, Vue.js, React, Nuxt.js, Next.js, Vite, Astro, jQuery, Tailwind CSS, CSS, Sass" /></a><a href="https://skillicons.dev/icons?i=html,js,ts,vue,react,nuxtjs,nextjs,vite,astro,jquery,tailwind,css,sass&theme=dark#gh-dark-mode-only"><img src="https://skillicons.dev/icons?i=html,js,ts,vue,react,nuxtjs,nextjs,vite,astro,jquery,tailwind,css,sass&amp;theme=dark" alt="HTML, JavaScript, TypeScript, Vue.js, React, Nuxt.js, Next.js, Vite, Astro, jQuery, Tailwind CSS, CSS, Sass" /></a>
 
 - Backend:
 
-  ![Node.js, Deno, PHP, Express, Prisma, SQLite, MySQL, MongoDB, Redis, Nginx](https://skillicons.dev/icons?i=nodejs,deno,php,express,prisma,sqlite,mysql,mongodb,redis,nginx&theme=light#gh-light-mode-only)![Node.js, Deno, PHP, Express, Prisma, SQLite, MySQL, MongoDB, Redis, Nginx](https://skillicons.dev/icons?i=nodejs,deno,php,express,prisma,sqlite,mysql,mongodb,redis,nginx&theme=dark#gh-dark-mode-only)
+  <a href="https://skillicons.dev/icons?i=nodejs,deno,php,express,prisma,sqlite,mysql,mongodb,redis,nginx&theme=light#gh-light-mode-only"><img src="https://skillicons.dev/icons?i=nodejs,deno,php,express,prisma,sqlite,mysql,mongodb,redis,nginx&amp;theme=light" alt="Node.js, Deno, PHP, Express, Prisma, SQLite, MySQL, MongoDB, Redis, Nginx" /></a><a href="https://skillicons.dev/icons?i=nodejs,deno,php,express,prisma,sqlite,mysql,mongodb,redis,nginx&theme=dark#gh-dark-mode-only"><img src="https://skillicons.dev/icons?i=nodejs,deno,php,express,prisma,sqlite,mysql,mongodb,redis,nginx&amp;theme=dark" alt="Node.js, Deno, PHP, Express, Prisma, SQLite, MySQL, MongoDB, Redis, Nginx" /></a>
 
 - Cloud & Platforms:
 
-  ![Cloudflare, GCP, GitHub, Figma, Notion](https://skillicons.dev/icons?i=cloudflare,gcp,github,figma,notion&theme=light#gh-light-mode-only)![Cloudflare, GCP, GitHub, Figma, Notion](https://skillicons.dev/icons?i=cloudflare,gcp,github,figma,notion&theme=dark#gh-dark-mode-only)
+  <a href="https://skillicons.dev/icons?i=cloudflare,gcp,github,figma,notion&theme=light#gh-light-mode-only"><img src="https://skillicons.dev/icons?i=cloudflare,gcp,github,figma,notion&amp;theme=light" alt="Cloudflare, GCP, GitHub, Figma, Notion" /></a><a href="https://skillicons.dev/icons?i=cloudflare,gcp,github,figma,notion&theme=dark#gh-dark-mode-only"><img src="https://skillicons.dev/icons?i=cloudflare,gcp,github,figma,notion&amp;theme=dark" alt="Cloudflare, GCP, GitHub, Figma, Notion" /></a>
 
 - Tools & Editors:
 
-  ![Premiere Pro, VS Code, Sublime Text, npm, Yarn, pnpm, Git, Markdown](https://skillicons.dev/icons?i=pr,vscode,sublime,npm,yarn,pnpm,git,md&theme=light#gh-light-mode-only)![Premiere Pro, VS Code, Sublime Text, npm, Yarn, pnpm, Git, Markdown](https://skillicons.dev/icons?i=pr,vscode,sublime,npm,yarn,pnpm,git,md&theme=dark#gh-dark-mode-only)
+  <a href="https://skillicons.dev/icons?i=pr,vscode,sublime,npm,yarn,pnpm,git,md&theme=light#gh-light-mode-only"><img src="https://skillicons.dev/icons?i=pr,vscode,sublime,npm,yarn,pnpm,git,md&amp;theme=light" alt="Premiere Pro, VS Code, Sublime Text, npm, Yarn, pnpm, Git, Markdown" /></a><a href="https://skillicons.dev/icons?i=pr,vscode,sublime,npm,yarn,pnpm,git,md&theme=dark#gh-dark-mode-only"><img src="https://skillicons.dev/icons?i=pr,vscode,sublime,npm,yarn,pnpm,git,md&amp;theme=dark" alt="Premiere Pro, VS Code, Sublime Text, npm, Yarn, pnpm, Git, Markdown" /></a>
 
 ## Community Contributions
 

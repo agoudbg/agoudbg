@@ -16,8 +16,8 @@ I'm a **full-stack developer** and **open-source contributor**. I love to create
      unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
      ~1870 days since this profile README went live on 2021-06-24); the counter keeps tracking
      real views on top of it. -->
-![Languages: 中文 / English](https://img.shields.io/badge/languages-%E4%B8%AD%E6%96%87_%2F_English-blue?style=flat-square)
-[![Telegram Channel: @bakadog](https://img.shields.io/badge/Telegram-%40bakadog-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/bakadog)
+![Languages: Chinese / English](https://img.shields.io/badge/Languages-Chinese_%2F_English-blue?style=flat-square)
+[![Telegram Channel: @bakadog](https://img.shields.io/badge/Channel-%40bakadog-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/bakadog)
 
 ## My Organizations
 

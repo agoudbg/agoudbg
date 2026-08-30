@@ -18,8 +18,8 @@
      unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
      ~1870 days since this profile README went live on 2021-06-24); the counter keeps tracking
      real views on top of it. Added zero width spaces to fix CJK width in badge. -->
-![语言: 中文 / English](https://img.shields.io/badge/语言-%E4%B8%AD%E6%96%87_%2F_English-blue?style=flat-square)
-[![Telegram 频道: @bakadog](https://img.shields.io/badge/Telegram-%40bakadog-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/bakadog?ref=github)
+![语言: 中文 / 英语](https://img.shields.io/badge/语言-中文_%2F_英语-blue?style=flat-square)
+[![Telegram 频道: @bakadog](https://img.shields.io/badge/频道-%40bakadog-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/bakadog?ref=github)
 
 ## 我的组织
 

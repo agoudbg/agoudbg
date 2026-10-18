@@ -12,10 +12,14 @@ I'm a **full-stack developer** and **open-source contributor**. I love to create
 
 </sup>
 
-![Profile Views](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700)<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
+<!-- Temporarily hidden while GitHub Camo cannot proxy Komarev.
+     Upstream: https://github.com/antonkomarev/github-profile-views-counter/issues/76
+![Profile Views](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700)
+     Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
      unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
      ~1870 days since this profile README went live on 2021-06-24); the counter keeps tracking
      real views on top of it. -->
+
 ![Languages: Chinese / English](https://img.shields.io/badge/Languages-Chinese_%2F_English-blue?style=flat-square)
 [![Telegram Channel: @bakadog](https://img.shields.io/badge/Channel-%40bakadog-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/bakadog)
 

@@ -14,10 +14,14 @@
 
 </sup>
 
-![账号浏览量](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700&label=浏览量​​​​​​)<!-- Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
+<!-- Temporarily hidden while GitHub Camo cannot proxy Komarev.
+     Upstream: https://github.com/antonkomarev/github-profile-views-counter/issues/76
+![账号浏览量](https://komarev.com/ghpvc/?username=agoudbg&style=flat-square&base=3700&label=浏览量​​​​​​)
+     Predicted data: the ghvc counter was only enabled on 2026-08-07, so all earlier views are
      unknown. base=3700 back-fills a prediction of those historical views (~2 views/day over the
      ~1870 days since this profile README went live on 2021-06-24); the counter keeps tracking
      real views on top of it. Added zero width spaces to fix CJK width in badge. -->
+
 ![语言: 中文 / 英语](https://img.shields.io/badge/语言-中文_%2F_英语-blue?style=flat-square)
 [![Telegram 频道: @bakadog](https://img.shields.io/badge/频道-%40bakadog-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/bakadog?ref=github)
 
